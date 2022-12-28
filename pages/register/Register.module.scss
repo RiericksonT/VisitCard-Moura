@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 32%;
+    padding: 0 0.5rem;
+    background-color: rgba(249, 174, 29, 0.9);
+
+    border-radius: 5%;
+
+    margin: 0 auto;
+    margin-top: 5%;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+    .register {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        border-radius: 5%;
+
+        margin: 0 auto;
+        margin-top: 5%;
+
+        .title {
+            margin-bottom: 3%;
+
+            line-height: 1.15;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+
+            color: var(--darkBlue-moura);
+            font-family: 'Fira Sans Extra Condensed', sans-serif;
+        }
+
+        .subtitle {
+            margin-bottom: 1%;
+            line-height: 1.15;
+            font-size: 1.3rem;
+            text-align: center;
+
+            color: var(--darkBlue-moura);
+            font-family: 'Fira Sans Extra Condensed', sans-serif;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 55%;
+
+            border-radius: 5%;
+            margin-top: 5%;
+
+            .input {
+                width: 80%;
+                height: 50px;
+
+                border-radius: 5px;
+                border: none;
+
+                color: var(--darkBlue-moura);
+
+                font-size: 1rem;
+                font-weight: bold;
+                font-family: 'Fira Sans Extra Condensed', sans-serif;
+
+                transition: 0.4s;
+
+                margin-bottom: 5%;
+
+                display: flex;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: var(--darkBlue-moura);
+                    font-size: 1rem;
+                    font-weight: bold;
+                    font-family: 'Fira Sans Extra Condensed', sans-serif;
+                }
+            }
+        }
+
+        .button {
+            width: 80%;
+            height: 15%;
+
+            border-radius: 5px;
+            border: none;
+
+            background-color: var(--darkBlue-moura);
+            color: var(--darkYellow-moura);
+
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Fira Sans Extra Condensed', sans-serif;
+            cursor: pointer;
+
+            transition: 0.4s;
+
+            &:hover {
+                background-color: var(--darkYellow-moura);
+                color: var(--darkBlue-moura);
+            }
+        }
+    }
+}

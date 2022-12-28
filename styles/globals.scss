@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;700&display=swap');
+
+:root {
+    --background-color: #e7e7e7;
+    --darkBlue-moura: #3f54ad;
+    --blue-moura: #4680ca;
+    --darkYellow-moura: #de9920;
+    --yellow-moura: #f9ae1d;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+
+    background-color: var(--background-color);
+    background-image: url('mouraLogo.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 25%;
+    background-attachment: fixed;
+
+}
