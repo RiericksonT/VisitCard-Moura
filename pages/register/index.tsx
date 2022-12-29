@@ -25,15 +25,22 @@ export default function Register() {
             phone,
             psw: '123'
         }
-        axios.post('http://localhost:5053/funcionarios/', user).then((response) => {
-            if (response.data != null) {
-                alert('Cadastro realizado com sucesso!')
-                window.location.href = '/showCard/?email=' + response.data.email
-            }
-            else {
-                alert('Erro ao cadastrar!')
-            }
-        })
+        if (user.name != '' && user.email != '' && user.office != '' && user.phone != '') {
+
+            axios.post('http://10.26.12.43:5053/funcionarios/', user).then((response) => {
+                if (response.data != null) {
+                    alert('Cadastro realizado com sucesso!')
+                    window.location.href = '/showCard/?email=' + response.data.email
+                }
+                else {
+                    alert('Erro ao cadastrar!')
+                }
+
+            })
+        }
+        else {
+            document.getElementById('error')!.style.display = 'block'
+        }
     }
 
 
@@ -47,6 +54,9 @@ export default function Register() {
                     <input className={styles.input} type="email" placeholder='Email' {...register("email")} required />
                     <input className={styles.input} type="text" placeholder='Cargo' {...register("office")} required />
                     <input className={styles.input} type="tel" placeholder='Telefone' {...register("phone")} required />
+                    <p id='error' className={styles.error}>
+                        Preencha todos os campos!
+                    </p>
                     <button className={styles.button} onClick={handleSubmit(onSubmit)}>Criar</button>
                 </form>
             </div>

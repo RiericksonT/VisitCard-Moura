@@ -1,148 +1,292 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;700&display=swap');
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-    width: 32%;
-    padding: 0 0.5rem;
-    background-color: rgba(249, 174, 29, 0.9);
-
-    border-radius: 5%;
-
-    margin: 0 auto;
-    margin-top: 5%;
-
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-
-    .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 1.5rem;
-        text-align: center;
-
-        margin-top: 15%;
-
-        color: var(--darkBlue-moura);
-        font-family: 'Fira Sans Extra Condensed', sans-serif;
-
-    }
-
-    .buttonArea {
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 80vh;
+        background-color: rgba(249, 174, 29, 0.9);
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
 
+        border-radius: 2%;
+
+        margin: 0 auto;
+        margin-top: 15%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+        .title {
+            margin: 0;
+            line-height: 1.15;
+            font-size: 1.5rem;
+            text-align: center;
+
+            margin-top: 15%;
+
+            color: var(--darkBlue-moura);
+            font-family: 'Fira Sans Extra Condensed', sans-serif;
+
+        }
+
+        .buttonArea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 5%;
+
+            width: 100%;
+
+            .buttonCreate {
+                width: 80%;
+                height: 50px;
+
+                border-radius: 5px;
+                border: none;
+
+                background-color: var(--darkBlue-moura);
+                color: white;
+
+                font-size: 1.2rem;
+                font-weight: bold;
+                font-family: 'Fira Sans Extra Condensed', sans-serif;
+                cursor: pointer;
+
+                transition: 0.4s;
+
+                margin-bottom: 7%;
+
+                display: flex;
+
+                text-align: center;
+                text-decoration: none;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background-color: var(--darkYellow-moura);
+                    color: var(--darkBlue-moura);
+                }
+            }
+
+            .buttonSearch {
+                width: 100%;
+                max-width: 20%;
+                height: 50px;
+
+                border-radius: 5px;
+                border: none;
+
+                background-color: var(--darkBlue-moura);
+                color: var(--darkBlue-moura);
+
+                font-size: 1.2rem;
+                font-weight: bold;
+                font-family: 'Fira Sans Extra Condensed', sans-serif;
+
+                cursor: pointer;
+                transition: 0.4s;
+
+                &:hover {
+                    background-color: var(--darkYellow-moura);
+                }
+            }
+
+            .separator {
+                font-size: 0.9rem;
+                font-weight: bold;
+
+                color: var(--darkBlue-moura);
+
+                display: flex;
+                align-items: center;
+
+                margin-bottom: 7%;
+
+                &::before {
+                    content: '—';
+                    margin-right: 16px;
+                }
+
+                &::after {
+                    content: '—';
+                    margin-left: 16px;
+                }
+            }
+
+            .inputEmail {
+                border: none;
+                border-bottom: 2px solid var(--darkBlue-moura);
+
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                text-align: center;
+
+                margin-left: .5rem;
+                margin-bottom: 5%;
+                padding: 0;
+                width: 80%;
+                height: 5vh;
+
+                background: transparent;
+
+                &:focus {
+                    outline: none;
+
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+        width: 32%;
+        padding: 0 0.5rem;
+        background-color: rgba(249, 174, 29, 0.9);
+
+        border-radius: 5%;
+
+        margin: 0 auto;
         margin-top: 5%;
 
-        width: 100%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 
-        .buttonCreate {
-            width: 80%;
-            height: 50px;
-
-            border-radius: 5px;
-            border: none;
-
-            background-color: var(--darkBlue-moura);
-            color: white;
-
-            font-size: 1.2rem;
-            font-weight: bold;
-            font-family: 'Fira Sans Extra Condensed', sans-serif;
-            cursor: pointer;
-
-            transition: 0.4s;
-
-            margin-bottom: 7%;
-
-            display: flex;
-
+        .title {
+            margin: 0;
+            line-height: 1.15;
+            font-size: 1.5rem;
             text-align: center;
-            text-decoration: none;
+
+            margin-top: 15%;
+
+            color: var(--darkBlue-moura);
+            font-family: 'Fira Sans Extra Condensed', sans-serif;
+
+        }
+
+        .buttonArea {
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
 
-            &:hover {
-                background-color: var(--darkYellow-moura);
-                color: var(--darkBlue-moura);
-            }
-        }
+            margin-top: 5%;
 
-        .buttonSearch {
             width: 100%;
-            max-width: 20%;
-            height: 50px;
 
-            border-radius: 5px;
-            border: none;
+            .buttonCreate {
+                width: 80%;
+                height: 50px;
 
-            background-color: var(--darkBlue-moura);
-            color: var(--darkBlue-moura);
+                border-radius: 5px;
+                border: none;
 
-            font-size: 1.2rem;
-            font-weight: bold;
-            font-family: 'Fira Sans Extra Condensed', sans-serif;
+                background-color: var(--darkBlue-moura);
+                color: white;
 
-            cursor: pointer;
-            transition: 0.4s;
+                font-size: 1.2rem;
+                font-weight: bold;
+                font-family: 'Fira Sans Extra Condensed', sans-serif;
+                cursor: pointer;
 
-            &:hover {
-                background-color: var(--darkYellow-moura);
-            }
-        }
+                transition: 0.4s;
 
-        .separator {
-            font-size: 0.9rem;
-            font-weight: bold;
+                margin-bottom: 7%;
 
-            color: var(--darkBlue-moura);
+                display: flex;
 
-            display: flex;
-            align-items: center;
+                text-align: center;
+                text-decoration: none;
+                align-items: center;
+                justify-content: center;
 
-            margin-bottom: 7%;
-
-            &::before {
-                content: '—';
-                margin-right: 16px;
+                &:hover {
+                    background-color: var(--darkYellow-moura);
+                    color: var(--darkBlue-moura);
+                }
             }
 
-            &::after {
-                content: '—';
-                margin-left: 16px;
-            }
-        }
+            .buttonSearch {
+                width: 100%;
+                max-width: 20%;
+                height: 50px;
 
-        .inputEmail {
-            border: none;
-            border-bottom: 2px solid var(--darkBlue-moura);
+                border-radius: 5px;
+                border: none;
 
-            justify-content: center;
-            align-items: center;
-            align-self: center;
-            text-align: center;
-
-            margin-left: .5rem;
-            margin-bottom: 5%;
-            padding: 0.5rem 1rem 0;
-
-            background: transparent;
-
-            width: 80%;
-
-            &:focus {
-                outline: none;
+                background-color: var(--darkBlue-moura);
                 color: var(--darkBlue-moura);
-                border-bottom: 3px solid var(--darkBlue-moura);
 
+                font-size: 1.2rem;
+                font-weight: bold;
+                font-family: 'Fira Sans Extra Condensed', sans-serif;
+
+                cursor: pointer;
+                transition: 0.4s;
+
+                &:hover {
+                    background-color: var(--darkYellow-moura);
+                }
             }
 
-            &::placeholder {
+            .separator {
+                font-size: 0.9rem;
+                font-weight: bold;
+
                 color: var(--darkBlue-moura);
-                font-size: 1rem;
+
+                display: flex;
+                align-items: center;
+
+                margin-bottom: 7%;
+
+                &::before {
+                    content: '—';
+                    margin-right: 16px;
+                }
+
+                &::after {
+                    content: '—';
+                    margin-left: 16px;
+                }
+            }
+
+            .inputEmail {
+                border: none;
+                border-bottom: 2px solid var(--darkBlue-moura);
+
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                text-align: center;
+
+                margin-left: .5rem;
+                margin-bottom: 5%;
+                padding: 0.5rem 1rem 0;
+
+                background: transparent;
+
+                width: 80%;
+
+                &:focus {
+                    outline: none;
+                    color: var(--darkBlue-moura);
+                    border-bottom: 3px solid var(--darkBlue-moura);
+
+                }
+
+                &::placeholder {
+                    color: var(--darkBlue-moura);
+                    font-size: 1rem;
+                }
             }
         }
     }

@@ -28,9 +28,8 @@ export default function ShowCard() {
         else {
             window.location.href = '/'
         }
-        axios.get(`http://localhost:5053/funcionarios/${email}/`,).then((response) => {
+        axios.get(`http://10.26.12.43:5053/funcionarios/${email}/`,).then((response) => {
             setCard(response.data)
-            console.log(response.data)
             document.getElementById("ItemPreview")!.src = "data:image/png;base64," + response.data.qrCode;
         })
     }, [email])
