@@ -6,8 +6,8 @@
         height: 100%;
         width: 90%;
         padding: 0 0.5rem;
-        background-color: rgba(249, 174, 29, 0.9);
-
+        background-color: var(--darkBlue-moura);
+        color: var(--yellow-moura);
         border-radius: 5%;
 
         margin: 0 auto;
@@ -24,6 +24,10 @@
             color: #000;
             margin-top: 1rem;
             margin-left: 1rem;
+            a{
+                color: var(--yellow-moura);
+                text-decoration: none;
+            }
         }
 
         .photo {
@@ -96,6 +100,11 @@
             font-weight: bold;
 
             margin-left: 25%;
+
+            a{
+                color: var(--darkBlue-moura);
+                text-decoration: none;
+            }
         }
 
         .photo {
