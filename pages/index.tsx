@@ -26,7 +26,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.title}>
           <h1>Visit Card - Moura</h1>
-          <p>Crie agora o seu cartão de visitas ou pesquise pelo cartão de vista dos seus colegas</p>
+          <p>Crie agora o seu cartão de visita ou pesquise pelo cartão de visita dos seus colegas</p>
         </div>
         <div className={styles.buttonArea}>
           <Link href={'/register'} className={styles.buttonCreate}>Criar seu cartão</Link>

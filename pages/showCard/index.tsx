@@ -29,8 +29,12 @@ export default function ShowCard() {
             window.location.href = '/'
         }
         axios.get(`http://10.26.12.43:5053/funcionarios/${email}/`,).then((response) => {
-            setCard(response.data)
-            document.getElementById("ItemPreview")!.src = "data:image/png;base64," + response.data.qrCode;
+            if (response.data) {
+                setCard(response.data)
+                document.getElementById("ItemPreview")!.src = "data:image/png;base64," + response.data.qrCode;
+            } else {
+                window.location.href = '/'
+            }
         })
     }, [email])
 

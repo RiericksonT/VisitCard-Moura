@@ -4,7 +4,7 @@
     .container {
         width: 100%;
         height: 80vh;
-        background-color: rgba(249, 174, 29, 0.9);
+        background-color: var(--darkBlue-moura);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,7 +23,7 @@
 
             margin-top: 15%;
 
-            color: var(--darkBlue-moura);
+            color: var(--darkYellow-moura);
             font-family: 'Fira Sans Extra Condensed', sans-serif;
 
         }
@@ -45,7 +45,7 @@
                 border-radius: 5px;
                 border: none;
 
-                background-color: var(--darkBlue-moura);
+                background-color: var(--darkYellow-moura);
                 color: white;
 
                 font-size: 1.2rem;
@@ -65,8 +65,8 @@
                 justify-content: center;
 
                 &:hover {
-                    background-color: var(--darkYellow-moura);
-                    color: var(--darkBlue-moura);
+                    background-color: var(--darkBlue-moura);
+                    color: var(--darkYellow-moura);
                 }
             }
 
@@ -78,8 +78,8 @@
                 border-radius: 5px;
                 border: none;
 
-                background-color: var(--darkBlue-moura);
-                color: var(--darkBlue-moura);
+                background-color: var(--darkYellow-moura);
+                color: var(--darkYellow-moura);
 
                 font-size: 1.2rem;
                 font-weight: bold;
@@ -89,7 +89,7 @@
                 transition: 0.4s;
 
                 &:hover {
-                    background-color: var(--darkYellow-moura);
+                    background-color: var(--darkBlue-moura);
                 }
             }
 
@@ -97,7 +97,7 @@
                 font-size: 0.9rem;
                 font-weight: bold;
 
-                color: var(--darkBlue-moura);
+                color: var(--darkYellow-moura);
 
                 display: flex;
                 align-items: center;
@@ -117,7 +117,7 @@
 
             .inputEmail {
                 border: none;
-                border-bottom: 2px solid var(--darkBlue-moura);
+                border-bottom: 2px solid var(--darkYellow-moura);
 
                 justify-content: center;
                 align-items: center;
@@ -150,7 +150,7 @@
         height: 80vh;
         width: 32%;
         padding: 0 0.5rem;
-        background-color: rgba(249, 174, 29, 0.9);
+        background-color: var(--darkBlue-moura);
 
         border-radius: 5%;
 
@@ -167,7 +167,7 @@
 
             margin-top: 15%;
 
-            color: var(--darkBlue-moura);
+            color: var(--darkYellow-moura);
             font-family: 'Fira Sans Extra Condensed', sans-serif;
 
         }
@@ -189,7 +189,7 @@
                 border-radius: 5px;
                 border: none;
 
-                background-color: var(--darkBlue-moura);
+                background-color: var(--darkYellow-moura);
                 color: white;
 
                 font-size: 1.2rem;
@@ -209,8 +209,8 @@
                 justify-content: center;
 
                 &:hover {
-                    background-color: var(--darkYellow-moura);
-                    color: var(--darkBlue-moura);
+                    background-color: var(--darkBlue-moura);
+                    color: var(--darkYellow-moura);
                 }
             }
 
@@ -222,8 +222,8 @@
                 border-radius: 5px;
                 border: none;
 
-                background-color: var(--darkBlue-moura);
-                color: var(--darkBlue-moura);
+                background-color: var(--darkYellow-moura);
+                color: var(--darkYellow-moura);
 
                 font-size: 1.2rem;
                 font-weight: bold;
@@ -233,7 +233,7 @@
                 transition: 0.4s;
 
                 &:hover {
-                    background-color: var(--darkYellow-moura);
+                    background-color: var(--darkBlue-moura);
                 }
             }
 
@@ -241,7 +241,7 @@
                 font-size: 0.9rem;
                 font-weight: bold;
 
-                color: var(--darkBlue-moura);
+                color: var(--darkYellow-moura);
 
                 display: flex;
                 align-items: center;
@@ -261,7 +261,7 @@
 
             .inputEmail {
                 border: none;
-                border-bottom: 2px solid var(--darkBlue-moura);
+                border-bottom: 2px solid var(--darkYellow-moura);
 
                 justify-content: center;
                 align-items: center;
@@ -278,13 +278,13 @@
 
                 &:focus {
                     outline: none;
-                    color: var(--darkBlue-moura);
-                    border-bottom: 3px solid var(--darkBlue-moura);
+                    color: var(--darkYellow-moura);
+                    border-bottom: 3px solid var(--darkYellow-moura);
 
                 }
 
                 &::placeholder {
-                    color: var(--darkBlue-moura);
+                    color: var(--darkYellow-moura);
                     font-size: 1rem;
                 }
             }
