@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react'
 import Card from '../../components/Card'
 
 type CardInfo = {
-    nome: string
+    name: string
     email: string
-    cargo: string
-    telefone: string
+    office: string
+    phone: string
 }
 
 export default function ShowCard() {
@@ -39,7 +39,7 @@ export default function ShowCard() {
 
         <>
 
-            <Card name={card.nome} email={card.email} office={card.cargo} phone={card.telefone} />
+            <Card name={card.name} email={card.email} office={card.office} phone={card.phone} />
         </>
 
     )

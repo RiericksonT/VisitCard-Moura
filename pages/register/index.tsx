@@ -15,14 +15,24 @@ export default function Register() {
         errors, isSubmitting
     } } = useForm<RegisterData>();
 
+
+
     const onSubmit: SubmitHandler<RegisterData> = async ({ name, email, office, phone }) => {
-        axios.post('http://localhost:3000/funcionarios/', {
+        let user = {
             name,
             email,
             office,
-            phone
-        }).then((response) => {
-            console.log("foi");
+            phone,
+            psw: '123'
+        }
+        axios.post('http://localhost:5053/funcionarios/', user).then((response) => {
+            if (response.data != null) {
+                alert('Cadastro realizado com sucesso!')
+                window.location.href = '/showCard/?email=' + response.data.email
+            }
+            else {
+                alert('Erro ao cadastrar!')
+            }
         })
     }
 
